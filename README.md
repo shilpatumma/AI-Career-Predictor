@@ -64,11 +64,11 @@ python manage.py runserver
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home](screenshots/home.png)
+![Home](screenshots/career_predictor_home.png)
 
 ### 🎯 Result Page
-![Result](screenshots/result-1.png)
-![Result](screenshots/result-2.png)
+![Result](screenshots/career_predictor_result_1.png)
+![Result](screenshots/career_predictor_result_2.png)
 
 ---
 
