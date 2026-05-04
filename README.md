@@ -1,4 +1,5 @@
 # 🎯 Career Recommendation System (ML + Django)
+🚀 AI-powered system that predicts the best career path using Machine Learning
 
 ## 📌 Project Overview
 
@@ -61,12 +62,21 @@ python manage.py runserver
 
 ---
 
+## ⚡ How It Works
+
+User → enters skills  
+→ ML model analyzes input  
+→ predicts top career roles  
+→ dashboard shows insights  
+
+---
+
 ## 📸 Screenshots
 
-### 🏠 Home Page
+### 🧾 Input Form
 ![Home](screenshots/career_predictor_home.png)
 
-### 🎯 Result Page
+### 📊 Prediction Dashboard
 ![Result](screenshots/career_predictor_result_1.png)
 ![Result](screenshots/career_predictor_result_2.png)
 
