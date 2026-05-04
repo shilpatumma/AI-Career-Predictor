@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Career Predictor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="card p-4 shadow">
+
+        <h2 class="text-center mb-4">🎯 Career Predictor</h2>
+
+        <form method="POST" action="/predict/">
+            {% csrf_token %}
+
+            <!-- SKILLS -->
+            <div class="mb-3">
+                <label class="form-label">Skills</label>
+                <input list="skills-list" name="skills" class="form-control" placeholder="Select or type skills (e.g. python sql excel)" required>
+
+                <datalist id="skills-list">
+                    <option value="python">
+                    <option value="sql">
+                    <option value="excel">
+                    <option value="powerbi">
+                    <option value="django">
+                    <option value="api">
+                    <option value="ml">
+                    <option value="tensorflow">
+                    <option value="html">
+                    <option value="css">
+                    <option value="javascript">
+                    <option value="react">
+                </datalist>
+            </div>
+
+            <!-- EXPERIENCE -->
+            <div class="mb-3">
+                <label class="form-label">Experience (years)</label>
+                <input type="number" name="experience" class="form-control" min="0" max="20" placeholder="Enter experience" required>
+            </div>
+
+            <!-- EDUCATION (FIXED DROPDOWN) -->
+            <div class="mb-3">
+                <label class="form-label">Education</label>
+                <select name="education" class="form-control" required>
+                    <option value="">-- Select Education --</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="MBA">MBA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="MCA">Other</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Predict Career</button>
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Career Predictor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="card p-4 shadow">
+
+        <h2 class="text-center mb-4">🎯 Career Predictor</h2>
+
+        <form method="POST" action="/predict/">
+            {% csrf_token %}
+
+            <div class="mb-3">
+                <label>Skills (comma separated)</label>
+                <input type="text" name="skills" class="form-control" placeholder="python sql excel">
+            </div>
+
+            <div class="mb-3">
+                <label>Experience (years)</label>
+                <input type="number" name="experience" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label>Education</label>
+                <input type="text" name="education" class="form-control" placeholder="BTech">
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Predict Career</button>
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html> -->
